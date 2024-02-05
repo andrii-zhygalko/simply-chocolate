@@ -173,8 +173,25 @@ button {
   border-radius: 100px;
   background: #fd9222;
   padding: 14px 40px;
-  border: none;
+  border: 1px solid transparent;
   margin-right: 14px;
+  transition: background 250ms ease-in-out, border 250ms ease-in-out;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  /* color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px; */
+  background: transparent;
+  /* padding: 14px 40px; */
+  border: 1px solid #fd9222;
+  border: 1px solid;
+  /* margin-right: 14px; */
 }
 
 .hero-made-link {
@@ -329,9 +346,22 @@ button {
 
 .made-item {
   margin-bottom: 24px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.made-item::before {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 1px solid #eceded;
+  border-radius: 50px;
+  background-color: #4c4c4c;
+  /* margin-right: 8px; */
 }
 
 .made-item:last-child {
@@ -344,18 +374,6 @@ button {
   font-weight: 400;
   line-height: 1.29;
   letter-spacing: -0.02em;
-}
-
-.made-item::before {
-  display: inline-block;
-  content: "";
-  width: 8px;
-  height: 8px;
-  border: 1px solid #eceded;
-  border-radius: 50px;
-  background-color: #4c4c4c;
-  flex-shrink: 0;
-  /* margin-right: 8px; */
 }
 
 /* ========= PRODUCTS ============= */
