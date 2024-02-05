@@ -29,6 +29,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 100%;
   max-width: 1166px;
@@ -378,6 +382,11 @@ button {
 
 /* ========= PRODUCTS ============= */
 
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .products-title {
 }
 
@@ -421,18 +430,57 @@ button {
 
 /* =========== SELLERS ============= */
 .sellers {
-}
-
-.sellets {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .sellers-list {
+  display: flex;
+  gap: 16px;
+  /* justify-content: center; */
+  /* flex-wrap: wrap; */
 }
 
 .sellers-item {
+  /* width: calc((100% - 32px) / 3); */
+}
+
+.sellers-item:hover .sellers-cover-container,
+.sellers-item:focus .sellers-cover-container {
+  transform: translateY(0);
 }
 
 .sellers-picture {
+}
+
+.sellers-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.sellers-cover-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 15px 15px 0px 0px;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+  background: linear-gradient(
+    165deg,
+    rgba(253, 253, 255, 0.1) 3.97%,
+    rgba(8, 2, 21, 0) 109.76%
+  );
+  backdrop-filter: blur(7.5px);
+}
+
+.sellers-cover-text {
+  color: #fafafa;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  padding: 0 40px;
 }
 
 .sellers-subtitle {
@@ -442,10 +490,19 @@ button {
   line-height: 1.33;
   letter-spacing: -0.02;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border-radius: 0px 0px 15px 15px;
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
 }
 
 /* ============== LOVED ================== */
 .loved {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .loved-title {
@@ -458,9 +515,6 @@ button {
 }
 
 .loved-item {
-}
-
-.loved- {
 }
 
 .loved-sustitle {
