@@ -652,11 +652,61 @@ img {
   margin-bottom: 40px;
 }
 
+.modal-form {
+}
+
+.modal-field {
+  margin-bottom: 18px;
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(64, 64, 64, 0.3);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.modal-icon {
+  fill: none;
+  stroke: #404040;
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: stroke 150ms ease-in-out;
+}
+
 .modal-input {
   width: 100%;
   height: 68px;
-  margin-bottom: 18px;
+  padding-left: 62px;
+  outline: transparent;
   border-radius: 13px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  /* box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03); */
+  transition: border-color 150ms ease-in-out;
+}
+
+.modal-input:focus {
+  border-color: #fd9222;
+}
+
+.modal-input:focus + .modal-icon {
+  stroke: #fd9222;
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 137px;
+  outline: transparent;
+  padding: 22px 24px;
+  border-radius: 13px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  transition: border-color 150ms ease-in-out;
+  resize: none;
 }
