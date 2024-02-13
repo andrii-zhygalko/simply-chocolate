@@ -39,7 +39,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid #8f0ef8;
+  /* outline: 2px solid #8f0ef8; */
 }
 
 .visually-hidden {
@@ -553,6 +553,9 @@ img {
 
 .footer-top {
   display: flex;
+  padding-bottom: 54px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
 }
 
 .footer-text {
@@ -571,16 +574,22 @@ img {
 
 .footer-subtitle {
   color: #fff;
-  text-align: center;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.29;
+  margin-bottom: 14px;
+}
+
+.footer-socials {
+  margin-right: 50px;
+}
+
+.footer-contacts {
 }
 
 .footer-soc-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 14px;
 }
 
 .footer-soc-item {
@@ -602,7 +611,8 @@ img {
 .footer-address-list {
 }
 
-.footer-address-item {
+.footer-address-item:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 .footer-address-link {
@@ -617,6 +627,8 @@ img {
 }
 
 .footer-menu-list {
+  display: flex;
+  gap: 24px;
 }
 
 .footer-menu-item {
@@ -628,6 +640,43 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.02em;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-form {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-input {
+  width: 313px;
+  height: 52px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 30px;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  background-color: transparent;
+}
+
+.folder-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+
+.footer-btn {
+  padding: 17px 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 100px;
+  background: #fd9222;
 }
 
 /* ======================== MODAL =============================== */
