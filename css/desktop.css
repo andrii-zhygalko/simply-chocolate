@@ -34,13 +34,10 @@ img {
 }
 
 .container {
-  /* width: 100%; */
-  /* max-width: 1166px; */
-  width: 320px;
-  /* padding-left: 15px; */
-  /* padding-right: 15px; */
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
+  max-width: 1166px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   /* outline: 2px solid #8f0ef8; */
 }
@@ -61,11 +58,9 @@ img {
 .title {
   color: #111;
   text-align: center;
-  /* font-size: 24px; */
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
-  /* line-height: 1.17; */
-  line-height: 1.2;
+  line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
@@ -273,10 +268,8 @@ img {
 
 /* ========== TASTE ============= */
 .taste {
-  /* padding-top: 120px; */
-  /* padding-bottom: 60px; */
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .taste-title {
@@ -302,15 +295,13 @@ img {
 .taste-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px 32px; */
-  row-gap: 20px;
+  gap: 24px 32px;
 }
 
 .taste-item {
   background-color: #ffffff;
   padding: 28px 23px;
-  /* width: calc((100% - 96px) / 4); */
-  width: 100%;
+  width: calc((100% - 96px) / 4);
   border-radius: 15px;
   border: 1px solid #fd9222;
 }
@@ -893,12 +884,4 @@ img {
   background-color: #fd9222;
   border: none;
   fill: #ffffff;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 734px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
 }
